@@ -1047,7 +1047,9 @@ document.addEventListener('DOMContentLoaded', () => {
   renderChallengeArena();
   renderBeyondSyllabus();
   renderBlogSection();
-  renderGalaxySection();
+  if (galaxyContainer) {
+    renderGalaxySection();
+  }
 
   if (window.WonderlandAnimations && window.WonderlandAnimations.init3DCardTilt) {
     window.WonderlandAnimations.init3DCardTilt();
